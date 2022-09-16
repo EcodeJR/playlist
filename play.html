@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="play.css">
+</head>
+
+<body>
+    <div class="main">
+        <p id="logo"><i class="uil uil-music"></i>Music</p>
+
+
+
+        <!--Left part-->
+        <div class="left">
+
+            <!--Songimg-->
+            <img id="track_image" alt="track image">
+
+            <div class="volume">
+                <p id="volume_show">90</p>
+                <i class="uil uil-volume-up" id="volume_icon" onclick="mute_sound()"></i>
+                <input title="volume" type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+            </div>
+        </div>
+
+
+        <!--right part-->
+        <div class="right">
+            <div class="show_song_no">
+                <p id="present">1</p>
+                <p>/</p>
+                <p id="total">5</p>
+            </div>
+
+
+            <!--Son title-->
+            <p id="title">title.mp3</p>
+            <p id="artist">Artist name</p>
+
+            <!--middle part-->
+            <div class="middle">
+                <button onclick="previous_song()" id="pre"><i class="uil uil-previous"></i></button>
+                <button onclick="justplay()" id="play"><i class="uil uil-play"></i></button>
+                <button onclick="next_song()" id="next"><i class="uil uil-step-forward"></i></button>
+            </div>
+
+
+            <!--song durration part-->
+            <div class="duration">
+                <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+            </div>
+            <button id="auto" onclick="autoplay_switch()">Auto play <i class="uil uil-repeat"></i></button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!--Add js file-->
+    <script src="play.js"></script>
+</body>
+
+</html>

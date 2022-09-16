@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <section class="container" id="home">
+        <nav>
+            <img src="logo.png" alt="logo" class="logo">
+            <ul id="menuList">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#playlist">Playlist</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <img src="menu.png" alt="menu" class="menu" onclick="togglemenu()">
+        </nav>
+        <div class="home">
+            <h1>Play<span>list</span></h1>
+            <p>Get only the top songs on your Playlist</p>
+            <a href="#"><button>Download</button></a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="abttext">
+            <h1>Our <span>Story</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vitae facere iusto! Ab repellat mollitia debitis tempora quisquam minima! Culpa nulla ea possimus accusamus voluptates perspiciatis. Voluptate, voluptatem? Ipsam, itaque! Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis harum consectetur corrupti porro omnis inventore tenetur, nihil odit, sit nemo quia laboriosam dolore dolorem quis? Mollitia quisquam voluptas numquam. Lorem
+                ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem laborum eligendi praesentium iusto quos quas cupiditate deserunt eius iure pariatur et incidunt sed quasi sunt recusandae, magnam doloribus dolor maiores! Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Voluptatibus quibusdam amet inventore vitae atque! Molestias quia autem esse, provident a, non quisquam voluptatum hic qui ratione delectus quae! Voluptate, suscipit.
+            </p>
+            <a href="#"><button>Download</button></a>
+        </div>
+        <div class="image">
+
+        </div>
+    </section>
+    <section class="playlist" id="playlist">
+        <div class="mp3" id="mp3">
+            <div class="songdesc">
+                <img src="play.jpg" alt="currentplay">
+                <h2>Title</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint aliquam, temporibus, ad odit quae nobis cum soluta necessitatibus doloribus a nam asperiores impedit. Fuga repudiandae temporibus blanditiis alias ea iure.</p>
+                <div class="playbtn">
+                    <a href="#"><i class="uil uil-previous"></i></a>
+                    <a href="#"><i class="uil uil-pause"></i></a>
+                    <a href="#"><i class="uil uil-step-forward"></i></a>
+                </div>
+            </div>
+            <div class="songs">
+                <h1>Songs list</h1>
+
+                <div class="songlist">
+                    <img src="play.jpg" alt="play">
+                    <h2>Title</h2>
+                    <a href="#"><i class="uil uil-play"></i></a>
+                </div>
+                <div class="songlist">
+                    <img src="play.jpg" alt="play">
+                    <h2>Title</h2>
+                    <a href="#"><i class="uil uil-play"></i></a>
+                </div>
+                <div class="songlist">
+                    <img src="play.jpg" alt="play">
+                    <h2>Title</h2>
+                    <a href="#"><i class="uil uil-play"></i></a>
+                </div>
+                <div class="songlist">
+                    <img src="play.jpg" alt="play">
+                    <h2>Title</h2>
+                    <a href="#"><i class="uil uil-play"></i></a>
+                </div>
+                <div class="songlist">
+                    <img src="play.jpg" alt="play">
+                    <h2>Title</h2>
+                    <a href="#"><i class="uil uil-play"></i></a>
+                </div>
+                <div class="songlist">
+                    <img src="play.jpg" alt="play">
+                    <h2>Title</h2>
+                    <a href="#"><i class="uil uil-play"></i></a>
+                </div>
+                <div class="songlist">
+                    <img src="play.jpg" alt="play">
+                    <h2>Title</h2>
+                    <a href="#"><i class="uil uil-play"></i></a>
+                </div>
+                <div class="songlist">
+                    <img src="play.jpg" alt="play">
+                    <h2>Title</h2>
+                    <a href="#"><i class="uil uil-play"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="youtube" id="youtube">
+            <h1>Youtube Downloader</h1>
+            <div class="link_cont">
+                <label for="url">URL</label>
+                <input type="text" name="url" placeholder="Enter Video link" required>
+            </div>
+            <div class="formate_conn">
+                <label for="formate">Formate</label>
+                <select name="formate" id="formate">
+                    <option selected disabled>Select video Formate</option>
+                    <option value="mp3">Mp3</option>
+                    <option value="mp4a">144</option>
+                    <option value="360">360</option>
+                    <option value="480">480</option>
+                    <option value="720">720</option>
+                    <option value="1080">1080</option>
+                    <option value="4k">4k</option>
+                    <option value="8k">8k</option>
+                </select>
+            </div>
+            <div class="btn_youtube">
+                <button class="btn" type="submit">Start</button>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="context">
+            <h1>Contact us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, odio quos. Culpa modi doloremque, quibusdam quaerat dolorum eos laboriosam a, ab incidunt rem illo itaque porro unde voluptatum repudiandae officia?</p>
+        </div>
+        <form action="post">
+            <h1>Get in <span>Touch</span></h1>
+            <div class="name">
+                <input type="text" name="Name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="email">
+                <input type="email" name="Email" placeholder="Enter your Email" required>
+            </div>
+            <div class="phone">
+                <input type="number" name="Phone" placeholder="Enter your Phone number" required>
+            </div>
+            <div class="message">
+                <textarea name="Message" id="message" cols="30" rows="10" placeholder="Enter a Message" required></textarea>
+            </div>
+            <input type="submit" class="submit" name="submit">
+        </form>
+    </section>
+
+
+    <footer>
+        <h1>Abuja-Keffi Rd Masaka,Nasarawa State. Nigeria</h1>
+        <h2>(+234)7051242451</h2>
+        <h3>emmanuueldalyop3@gmail.com</h3>
+        <h4>www.emmanueldcode.sputnik.online</h4>
+        <div class="social">
+            <a title="facebook" href="https://www.facebook.com/emmanuel.dalyop.96" target="_blank" rel="noopener noreferrer"><i class="uil uil-facebook-f"></i></a>
+            <a title="instagram" href="https://www.instagram.com/emma_nuel.jr/" target="_blank" rel="noopener noreferrer"><i class="uil uil-instagram"></i></a>
+            <a title="linkedin" href="https://www.linkedin.com/mwlite/in/emmanuel-dalyop-5b6a1b178" target="_blank" rel="noopener noreferrer"><i class="uil uil-linkedin-alt"></i></a>
+            <a title="twitter" href="https://twitter.com/MrIntellectual5?t=383f-aoFixIIIKtMsjLjJg&s=09" target="_blank" rel="noopener noreferrer"><i class="uil uil-twitter"></i></a>
+        </div>
+        <div class="copyright">
+            <i class="uil uil-copyright"></i>
+            <p>2022 copyright Emmanuel Dalyop</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        //@@@@@@@@@@menulist@@@@@@######
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "350px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+
+        $(".btn").click(function() {
+            var link = $(".link").val();
+            var format = $(".format").children("option:selected").val();
+            var src = "" + link + "=" + format + "";
+            download(link, format);
+        });
+
+        function download(link, format) {
+            $('.btn_youtube').html('<iframe style="height:50px; border:none; overflow:hidden;" src="http://loader.to/api/button/?url=' + link + '&fx' + format + '"></iframe>');
+        }
+    </script>
+</body>
+
+</html>
